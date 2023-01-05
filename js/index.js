@@ -33,7 +33,13 @@ function task3(){
     console.log(`Введено: ${inputMinutes} мин.`);
     let intMinutes=parseInt(inputMinutes);
     let minutes=intMinutes%60;
-    let hours=(intMinutes-minutes)/60;
+    let hours="";
+    console.time();
+    hours=(intMinutes-minutes)/60;
+    console.timeEnd();
+    console.time();
+    hours=Math.floor(intMinutes / 60);
+    console.timeEnd();
     if(hours<10) hours="0"+hours;
     if(minutes<10) minutes="0"+minutes;
     console.log(`${hours}:${minutes} (Преобразовано в формат HH:MM)`);

@@ -30,13 +30,13 @@ function task3(){
     console.clear();
     console.log("Task3");
     let inputMinutes = prompt("Введите количество минут");
-    console.log("Введено: "+inputMinutes+" мин.");
+    console.log(`Введено: ${inputMinutes} мин.`);
     let intMinutes=parseInt(inputMinutes);
     let minutes=intMinutes%60;
     let hours=(intMinutes-minutes)/60;
     if(hours<10) hours="0"+hours;
     if(minutes<10) minutes="0"+minutes;
-    console.log(hours+":"+minutes+" (Преобразовано в формат HH:MM)");
+    console.log(`${hours}:${minutes} (Преобразовано в формат HH:MM)`);
 }
 
 /* Вивести на екран модальне вікно prompt з повідомленням "Enter the number".
